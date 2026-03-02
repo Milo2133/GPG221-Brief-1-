@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f0104735485b5478379a371655e39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turningSpeed: 40
+  turningSpeed: 100
   rb: {fileID: 6838320721801394902}
   distance: 1.5
 --- !u!1 &1985343267193501427
@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6838320721801394902}
-  distance: 2
+  distance: 2.7
   speed: 100
-  slowSpeed: -500
+  slowSpeed: -50
 --- !u!114 &8900209081579109412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,9 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f0104735485b5478379a371655e39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turningSpeed: 100
+  turningSpeed: 150
   rb: {fileID: 6838320721801394902}
-  distance: 2
+  distance: 2.5
 --- !u!114 &6460771436647091210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours: {fileID: 2465030195066117788}
   rb: {fileID: 6838320721801394902}
-  force: -100
+  force: 100
   cross: {x: 0, y: 0, z: 0}
   MaxNeigbourdistance: 4
 --- !u!114 &4190829681865060465
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours: {fileID: 2465030195066117788}
   rb: {fileID: 6838320721801394902}
-  force: 30
+  force: 60
   cross: {x: 0, y: 0, z: 0}
   MaxNeigbourdistance: 4
 --- !u!114 &7961224096611593907
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours: {fileID: 2465030195066117788}
   rb: {fileID: 6838320721801394902}
-  force: 100
+  force: 20
   cross: {x: 0, y: 0, z: 0}
 --- !u!1 &3827295593407910971
 GameObject:
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f0104735485b5478379a371655e39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turningSpeed: -40
+  turningSpeed: -70
   rb: {fileID: 6838320721801394902}
   distance: 1.5
 --- !u!1 &9180063384872974581

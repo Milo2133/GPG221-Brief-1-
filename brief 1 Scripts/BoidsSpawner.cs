@@ -13,14 +13,21 @@ public class BoidsSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            for (int i = 0; i < amount; i++)
-            {
-                Instantiate(prefab, transform.position,transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0));
-                
-            }
-        }
-
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     for (int i = 0; i < amount; i++)
+        //     {
+        //         Instantiate(prefab, transform.position,transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0));
+        //     }
+        // }
     }
+
+    public void SpawnAI()
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            Instantiate(prefab, transform.position,transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0));
+        }  
+    }
+    
 }

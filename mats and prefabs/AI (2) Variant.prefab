@@ -11,7 +11,11 @@ PrefabInstance:
     - target: {fileID: 316451407946815336, guid: 3db8f34ef1acc424b8df45d334393235, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 8917868658905435176, guid: 27b20abb8886d0e4596f09b41ccbb71a, type: 3}
+      objectReference: {fileID: 7612590901208629958, guid: fd4f3587edebe474480950f9689e512c, type: 3}
+    - target: {fileID: 316451407946815336, guid: 3db8f34ef1acc424b8df45d334393235, type: 3}
+      propertyPath: Everything.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2101947107954984713, guid: 3db8f34ef1acc424b8df45d334393235, type: 3}
       propertyPath: m_Name
       value: AI (2) Variant
@@ -23,7 +27,7 @@ PrefabInstance:
     - target: {fileID: 4131632799245456665, guid: 3db8f34ef1acc424b8df45d334393235, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 7612590901208629958, guid: fd4f3587edebe474480950f9689e512c, type: 3}
+      objectReference: {fileID: 8917868658905435176, guid: 27b20abb8886d0e4596f09b41ccbb71a, type: 3}
     - target: {fileID: 6454131943341186488, guid: 3db8f34ef1acc424b8df45d334393235, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.27

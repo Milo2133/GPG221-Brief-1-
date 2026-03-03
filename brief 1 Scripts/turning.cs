@@ -21,11 +21,14 @@ public class turning : MonoBehaviour
         if (Physics.Raycast(transform.position,transform.forward, distance))
         {
         rb.AddRelativeTorque(0,turningSpeed,0);
+        {
+         Debug.DrawRay(transform.position,transform.forward,Color.red);   
+        }
         }
     }
 
-    private void OnDrawGizmos()
-    {
-    Debug.DrawRay(transform.position,transform.forward,Color.red);
-    }
+    // private void OnDrawGizmos()
+    // {
+    // Debug.DrawRay(transform.position,transform.forward,Color.red);
+    // }
 }

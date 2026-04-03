@@ -8,14 +8,14 @@ public class LookingforPlayerStates : AntAIState
 {
     public Collectstates States;
     
-    [SerializeField] private moveForward forward;
+    [SerializeField] private mForward forward;
     [SerializeField] private wanderingChiceknj wander;
     [SerializeField] private aggresiveAlienSight alienView;
 
 
     public override void Create(GameObject aGameObject)
     {
-        forward = aGameObject.GetComponent<moveForward>();
+        forward = aGameObject.GetComponent<mForward>();
         wander = aGameObject.GetComponent<wanderingChiceknj>();
         alienView = aGameObject.GetComponent<aggresiveAlienSight>();
         base.Create(aGameObject);

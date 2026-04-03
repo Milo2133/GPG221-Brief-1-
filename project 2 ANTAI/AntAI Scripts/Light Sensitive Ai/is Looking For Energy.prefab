@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3072096707974707759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926791576453280128}
+  - component: {fileID: -5412966278135630144}
+  - component: {fileID: 8719099409140479807}
+  - component: {fileID: -1203134893533017762}
+  - component: {fileID: 4617104243648661377}
+  - component: {fileID: 4595161349278713544}
+  m_Layer: 0
+  m_Name: is Looking For Energy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926791576453280128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5412966278135630144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f259499504344a478f77730135c24e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8719099409140479807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a122432a15259428ed593d085756b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  States: {fileID: 0}
+  currentPath: {x: 0, y: 0, z: 0}
+  cornerIndex: 0
+  magnitude: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  target: {fileID: 5584227699985559436, guid: 1152c9d201a4e4546bbf0cc58a5277a0, type: 3}
+  distanceThreshold: 2
+  pathFollowingColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-1203134893533017762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1090973aa57d64fb365bfaa93a7d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  turnSpeed: 2
+  targetPosition: {x: 0, y: 0, z: 0}
+  rb: {fileID: 7469044702776112787, guid: 4378408f198c6054ab5b0944d675c736, type: 3}
+--- !u!114 &4617104243648661377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b912612298a293448a075869da0bc237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7469044702776112787, guid: 4378408f198c6054ab5b0944d675c736, type: 3}
+  speed: 100
+--- !u!114 &4595161349278713544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072096707974707759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0879710414cd96547ad40fe7a4622854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alienStates: {fileID: 8010382288931924447, guid: 4378408f198c6054ab5b0944d675c736, type: 3}
+  energyFinding: {fileID: 8719099409140479807}

@@ -16,7 +16,7 @@ public class AlienPullingWeaponOut : MonoBehaviour
 
     void FixedUpdate()
     {
-      GetComponentInParent<GameObject>().SetActive(true);
+
         gun.SetActive(true);
         {
             GetComponentInParent<Collectstates>().isCanSeeplayer = true;

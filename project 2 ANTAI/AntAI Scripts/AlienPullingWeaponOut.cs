@@ -16,10 +16,11 @@ public class AlienPullingWeaponOut : MonoBehaviour
 
     void FixedUpdate()
     {
+      GetComponentInParent<GameObject>().SetActive(true);
         gun.SetActive(true);
         {
-          States.isCanSeeplayer = true ; 
-          States.isweapondDrawn = true;
+            GetComponentInParent<Collectstates>().isCanSeeplayer = true;
+            GetComponentInParent<Collectstates>().isweapondDrawn = true;
         }
     }
 }

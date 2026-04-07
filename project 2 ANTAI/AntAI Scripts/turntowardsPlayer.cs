@@ -19,23 +19,29 @@ public class turntowardsPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetDir;
-    
-        if (targetObject)
         {
-            // Has a target gameobject
-            targetDir = (targetObject.position - transform.position).normalized;
-            float angle = Vector3.SignedAngle(transform.forward, targetDir, transform.up);
-            rb.AddRelativeTorque(0f,angle,0f);
-            StartCoroutine(drawWrapon());
-        }
-    }
+            Vector3 targetDir;
 
-    private IEnumerator drawWrapon()
-    {
-      yield return new WaitForSeconds(3f);
-      states.isCanSeeplayer = true;
-      states.isweapondDrawn = false;
-      states.isLookingforplayer = false;
+            if (targetObject)
+            {
+                // Has a target gameobject
+                targetDir = (targetObject.position - transform.position).normalized;
+                float angle = Vector3.SignedAngle(transform.forward, targetDir, transform.up);
+                GetComponentInParent<Rigidbody>().AddRelativeTorque(0F, angle, 0f);
+                // rb.AddRelativeTorque(0f,angle,0f);
+                StartCoroutine(drawWrapon());
+            }
+
+             IEnumerator drawWrapon()
+            {
+                yield return new WaitForSeconds(3f);
+                GetComponentInParent<Collectstates>().isCanSeeplayer = true;
+                GetComponentInParent<Collectstates>().isweapondDrawn = false;
+                GetComponentInParent<Collectstates>().isLookingforplayer = false;
+                // states.isCanSeeplayer = true;
+                // states.isweapondDrawn = false;
+                // states.isLookingforplayer = false;
+            }
+        }
     }
 }

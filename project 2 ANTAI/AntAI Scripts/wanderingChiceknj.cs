@@ -12,6 +12,7 @@ public class wanderingChiceknj : MonoBehaviour
     
     private void FixedUpdate()
     {
-     rb.AddRelativeTorque(0f,Random.Range(-amount,amount),0f);
+        GetComponentInParent<Rigidbody>().AddRelativeTorque(0f,Random.Range(-amount,amount),Random.Range(-amount,amount),0);
+     // rb.AddRelativeTorque(0f,Random.Range(-amount,amount),0f);
     }
 }

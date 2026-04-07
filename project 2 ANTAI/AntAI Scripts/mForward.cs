@@ -16,8 +16,9 @@ public class mForward : MonoBehaviour
 
     public void FixedUpdate()
     {
-      GameObject alien = GameObject.FindGameObjectWithTag("Ai");
-     rb.AddRelativeForce(0f, 0f, speed);
+      GetComponentInParent<Rigidbody>().AddRelativeForce(0f,0f,speed);  
+     //  GameObject alien = GameObject.FindGameObjectWithTag("Ai");
+     // rb.AddRelativeForce(0f, 0f, speed);
     }
     
 }

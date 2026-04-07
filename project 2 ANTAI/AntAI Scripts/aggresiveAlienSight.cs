@@ -16,15 +16,11 @@ public class aggresiveAlienSight : MonoBehaviour
     [SerializeField] private Collectstates states;
 
 
-    private void Awake()
-    {
-        Player = LayerMask.GetMask("players");
-    }
-
     private void FixedUpdate()
     {
-        states.isLookingforplayer = true;
-        gameObject.GetComponent<Collectstates>();
+        GetComponentInParent<Collectstates>().isLookingforplayer = true;
+        // states.isLookingforplayer = true;
+        
         float currentAngle = -maxAngle / 2f;
 
         for (int i = 0; i < rays; i++)
@@ -44,11 +40,12 @@ public class aggresiveAlienSight : MonoBehaviour
             currentAngle += spreadAngle;
         }
 
-        if (seesPlayer)
+        if(seesPlayer)
         {
+            GetComponentInParent<Collectstates>().isCanSeeplayer = true;
             // states.isLookingforplayer = false;
-            states.isCanSeeplayer = true;
-         Debug.Log("Sees Player");   
+            // states.isCanSeeplayer = true;
+            Debug.Log("Sees Player");   
         }
     }
 }
